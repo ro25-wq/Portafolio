@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "titulo": "Nuevo proyecto en React",
+    "fecha": "06-10-2026",
+    "contenido": "He comenzado a desarrollar un nuevo proyecto utilizando React y Bootstrap."
+  },
+  {
+    "id": 2,
+    "titulo": "Aprendiendo pruebas unitarias",
+    "fecha": "05-10-2026",
+    "contenido": "Actualmente estoy aprendiendo a implementar pruebas unitarias para mejorar la calidad de mis aplicaciones."
+  }
+]
