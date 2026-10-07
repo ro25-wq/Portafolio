@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap');
+ 
+/* ---------- Paleta (basada en el avatar) ---------- */
+:root {
+  --rosa-fondo: #fff7fa;
+  --rosa-suave: #fdeaf1;
+  --rosa-medio: #f4b8cc;
+  --rosa-fuerte: #c4577f;
+  --frambuesa: #a8426a;
+  --texto: #4a2c3a;
+  --texto-suave: #8a6676;
+  --sombra: 0 10px 30px rgba(196, 87, 127, 0.15);
+}
+ 
+/* ---------- Base ---------- */
+html {
+  scroll-behavior: smooth;
+}
+ 
+body {
+  margin: 0;
+  display: block;
+  font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  background-color: var(--rosa-fondo);
+  color: var(--texto);
+}
+ 
+section {
+  scroll-margin-top: 70px;
+}
+ 
+h1,
+h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+ 
+/* ---------- Navbar ---------- */
+nav.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  background: linear-gradient(90deg, var(--frambuesa), var(--rosa-fuerte)) !important;
+  box-shadow: 0 4px 18px rgba(168, 66, 106, 0.3);
+}
+ 
+nav.navbar .navbar-brand {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.4rem;
+  color: #fff;
+}
+ 
+nav.navbar .navbar-brand::before {
+  content: '\2740\00a0'; /* flor */
+}
+ 
+nav.navbar .nav-link {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  border-radius: 50rem;
+  padding: 0.4rem 1rem;
+  margin-left: 0.25rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+ 
+nav.navbar .nav-link:hover,
+nav.navbar .nav-link:focus {
+  color: var(--frambuesa);
+  background-color: #fff;
+}
+ 
+/* ---------- Inicio ---------- */
+#inicio {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 2rem;
+  background: linear-gradient(135deg, var(--rosa-suave), #fff 60%, var(--rosa-medio));
+  box-shadow: var(--sombra);
+}
+ 
+#inicio h1 {
+  color: var(--frambuesa) !important;
+}
+ 
+#inicio .lead {
+  color: var(--texto-suave);
+  font-weight: 300;
+}
+ 
+/* ---------- Secciones ---------- */
+.bg-light {
+  background-color: var(--rosa-suave) !important;
+}
+ 
+section h2 {
+  color: var(--frambuesa) !important;
+  position: relative;
+}
+ 
+section h2.text-center::after,
+#sobre-mi h2::after {
+  content: '';
+  display: block;
+  width: 70px;
+  height: 4px;
+  margin: 0.6rem auto 0;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--rosa-medio), var(--rosa-fuerte));
+}
+ 
+#sobre-mi h2::after {
+  margin-left: 0;
+}
+ 
+/* ---------- Foto de perfil ---------- */
+#sobre-mi img {
+  border: 6px solid #fff;
+  box-shadow: 0 0 0 4px var(--rosa-medio), var(--sombra) !important;
+}
+ 
+/* ---------- Tarjetas (proyectos y noticias) ---------- */
+.card {
+  border: none !important;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: var(--sombra) !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+ 
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(196, 87, 127, 0.25) !important;
+}
+ 
+.card-title {
+  color: var(--frambuesa);
+}
+ 
+.card .text-muted {
+  color: var(--rosa-fuerte) !important;
+  font-size: 0.9rem;
+}
+ 
+/* ---------- Botones ---------- */
+.btn-dark {
+  background: linear-gradient(90deg, var(--frambuesa), var(--rosa-fuerte));
+  border: none;
+  border-radius: 50rem;
+  padding: 0.6rem 1.2rem;
+  font-weight: 500;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+ 
+.btn-dark:hover,
+.btn-dark:focus {
+  background: linear-gradient(90deg, var(--rosa-fuerte), var(--frambuesa));
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(196, 87, 127, 0.35);
+}
+ 
+/* ---------- Formulario ---------- */
+.form-label {
+  font-weight: 500;
+  color: var(--frambuesa);
+}
+ 
+.form-control {
+  border: 2px solid var(--rosa-suave);
+  border-radius: 1rem;
+  padding: 0.7rem 1rem;
+  background-color: #fff;
+}
+ 
+.form-control:focus {
+  border-color: var(--rosa-fuerte);
+  box-shadow: 0 0 0 0.25rem rgba(196, 87, 127, 0.2);
+}
+ 
+.alert-success {
+  border: none;
+  border-radius: 1rem;
+  background-color: var(--rosa-suave);
+  color: var(--frambuesa);
+}
+ 
+/* ---------- Accesibilidad: foco visible con teclado ---------- */
+a:focus-visible,
+button:focus-visible,
+.form-control:focus-visible {
+  outline: 3px solid var(--rosa-fuerte);
+  outline-offset: 2px;
+}
+ #sobre-mi h2 {
+  color: var(--frambuesa) !important;
+}
+/* ---------- Tonos más marcados (mismo rosa, más contraste) ---------- */
+:root {
+  --rosa-fondo: #fbe3ed;     /* fondo general de la página */
+  --rosa-suave: #f5c6d9;     /* secciones alternadas */
+  --rosa-medio: #e9a0bd;     /* bordes y detalles */
+  --rosa-tarjeta: #ffeef4;   /* interior de las tarjetas */
+}
+
+/* Secciones alternadas más oscuras */
+.bg-light {
+  background-color: var(--rosa-suave) !important;
+}
+
+/* Caja de bienvenida */
+#inicio {
+  background: linear-gradient(135deg, var(--rosa-suave), var(--rosa-medio));
+  border: 2px solid #fff;
+}
+
+/* Tarjetas con borde y fondo propio, para que se distingan */
+.card {
+  background-color: var(--rosa-tarjeta);
+  border: 2px solid var(--rosa-medio) !important;
+}
+
+.card .text-muted {
+  color: var(--frambuesa) !important;
+}
+
+/* Campos del formulario sobre fondo rosa */
+.form-control {
+  border-color: var(--rosa-medio);
+}
+/* Evita el fondo celeste del autocompletado */
+.form-control:-webkit-autofill,
+.form-control:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px #ffffff inset;
+  -webkit-text-fill-color: var(--texto);
+  caret-color: var(--texto);
+}
