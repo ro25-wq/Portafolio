@@ -4,9 +4,9 @@ Portafolio personal desarrollado con **React**, **Vite** y **Bootstrap**, con pr
 
 Evaluación Formativa N° 2 – DSY1104 Desarrollo Fullstack II (Duoc UC).
 
-- **Autora: Rosa Medina Garrido 
-- **Repositorio:
-- **Sitio publicado:
+- **Autora:** Rosa Medina
+- **Repositorio:** https://github.com/ro25-wq/Portafolio
+- **Sitio publicado:** https://ro25-wq.github.io/Portafolio/
 
 ## Capturas de pantalla
 
